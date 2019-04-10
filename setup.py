@@ -4,9 +4,9 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setup(
-    name='array-min',
-    version='0.9.2',
-    packages=['array-min'],
+    name='array_min',
+    version='0.9.3',
+    packages=['array_min'],
     url='https://github.com/Rohail1/array-min/',
     license='MIT',
     author='Rohail Najam',
