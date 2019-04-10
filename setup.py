@@ -4,7 +4,7 @@ setup(
     name='array-min',
     version='0.9.1',
     packages=['array-min'],
-    url='',
+    url='https://github.com/Rohail1/array-min/',
     license='Apache 2.0',
     author='Rohail Najam',
     author_email='rohaiil_najam@hotmail.com',
