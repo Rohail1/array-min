@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name='array-min',
-    version='0.9.1',
+    version='0.9.2',
     packages=['array-min'],
     url='https://github.com/Rohail1/array-min/',
     license='MIT',
