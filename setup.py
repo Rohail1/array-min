@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name='array_min',
-    version='0.9.3',
+    version='0.9.4',
     packages=['array_min'],
     url='https://github.com/Rohail1/array-min/',
     license='MIT',
@@ -14,4 +14,6 @@ setup(
     description='It is used to find minimum of a monotonically diverging arrays.',
     long_description=long_description,
     long_description_content_type='text/markdown',
+    test_suite='nose.collector',
+    tests_require=['nose'],
 )
