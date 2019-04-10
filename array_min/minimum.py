@@ -17,6 +17,9 @@ def find_minimum(array: list, initial_index: int = None, last_index: int = None)
     >>> find_minimum([19,18,15,14,16,17,18,20])
     14
 
+    >>> find_minimum([14,15,16,17,19])
+    14
+
     :param array:
     :param initial_index:
     :param last_index:
@@ -29,12 +32,12 @@ def find_minimum(array: list, initial_index: int = None, last_index: int = None)
         initial_index = 0
         last_index = len(distinct_list) - 1
     # check if list contain only one item
-    if len(distinct_list) == 1:
+    if initial_index == last_index:
         return distinct_list[initial_index]
 
     # check if there are two elements in the list
 
-    if len(distinct_list) == 2:
+    if last_index == initial_index + 1:
 
         # Since list has two elements
         # if first element is smaller than the second return it.
@@ -53,8 +56,7 @@ def find_minimum(array: list, initial_index: int = None, last_index: int = None)
         # If mid_point it smaller than both of its neighbours it means its the where both series diverge
         # it is the smallest element of entire list.
 
-        if distinct_list[mid_point] < distinct_list[initial_index] and \
-                distinct_list[mid_point] < distinct_list[last_index]:
+        if distinct_list[mid_point - 1] > distinct_list[mid_point] < distinct_list[mid_point + 1]:
             return distinct_list[mid_point]
 
         # If mid_point is small than previous element but greater than next element then smallest element lies
